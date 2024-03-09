@@ -1,5 +1,5 @@
 function fetchDriversByYear(year) {
-  const url = `http://ergast.com/api/f1/${year}/drivers.json`; // URL for drivers of each year
+  const url = `https://ergast.com/api/f1/${year}/drivers.json`; // URL for drivers of each year
   fetch(url)
     .then(response => {
       if (!response.ok) {
