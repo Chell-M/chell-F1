@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const driverId = params.get('driverId');
 
   if (driverId) {
-    fetch(`http://ergast.com/api/f1/drivers/${driverId}.json`)
+    fetch(`https://ergast.com/api/f1/drivers/${driverId}.json`)
       .then(response => response.json())
       .then(data => {
         const driver = data.MRData.DriverTable.Drivers[0];
